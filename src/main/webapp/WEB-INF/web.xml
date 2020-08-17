@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+ id="WebApp_ID" 
+ version="4.0">
+
+
+ <servlet>
+  	<servlet-name>SignUpController</servlet-name>
+
+  	<servlet-class>controller.SignUpController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginController</servlet-name>
+  	<servlet-class>controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddNewRecordController</servlet-name>
+  	<servlet-class>controller.AddNewRecordController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ViewAllRecordsController</servlet-name>
+  	<servlet-class>controller.ViewAllRecordsController</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>DeleteRecordController</display-name>
+  	<servlet-name>DeleteRecordController</servlet-name>
+  	<servlet-class>controller.DeleteRecordController</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>EditRecordController</display-name>
+  	<servlet-name>EditRecordController</servlet-name>
+  	<servlet-class>controller.EditRecordController</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <description>
+  	</description>
+  	<display-name>UpdateRecordController</display-name>
+  	<servlet-name>UpdateRecordController</servlet-name>
+  	<servlet-class>controller.UpdateRecordController</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+  	<servlet-name>SignUpController</servlet-name>
+  	<url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginController</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddNewRecordController</servlet-name>
+  	<url-pattern>/new</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewAllRecordsController</servlet-name>
+  	<url-pattern>/allrecords</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteRecordController</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditRecordController</servlet-name>
+  	<url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateRecordController</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  </web-app>
